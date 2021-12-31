@@ -1,0 +1,928 @@
+/* apresentação */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Raleway:wght@600&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background: black;
+    
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#brand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#brand h1, #bank {
+  user-select: none;
+  font-size: 100px;
+  color: rgb(3, 58, 87);
+  background: repeating-linear-gradient(-45deg, rgb(222, 38, 38) 0%, rgb(235, 235, 108) 7.14%, rgb(163, 203, 163) 14.28%,
+  rgb(0,255,255) 21.4%, rgba(38, 110, 155, 0.555) 28.56%, rgb(107, 107, 222) 35.7%, rgb(222, 160, 222) 42.84%, rgb(169, 79, 79) 50%);
+  background-size: 600vw 600vw;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: slide 10s linear infinite forwards;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+#bank {
+    font-size: 60px;
+    text-align: right;
+    margin-right: -138px;
+    margin-top: -28px;
+    font-weight: 200;   
+}
+
+@keyframes slide {
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 600vw;
+  }
+}
+
+/* tela cadastro e login */
+
+.cadastroLogin {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form {
+  margin-left: 100px;
+}
+.infoCadastroLogin {
+  flex: 0 0 auto;
+  width: 50%;
+  height: 100vh;
+  background-image: url(../imagens/arco2.jpeg);
+  background-size: cover;
+  color: black;
+  text-align: center;
+  position: relative;
+
+}
+
+#rainbown {
+  overflow: auto;
+}
+
+.cadastroELogin {
+  flex: 0 0 auto;
+  width: 50%;
+  height: 100vh;
+  background-color: black;
+}
+
+.infoInvestimentos {
+  font-size: 23px;
+  padding-top: 10px;
+
+}
+
+.propagandaCadastro {
+  padding: 0px 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 40px);
+}
+
+.propagandaCadastro >h1 {
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 35px;
+}
+.propagandaCadastro >h2 {
+  font-size: 28px;
+}
+
+.cadastroELogin >h1 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-weight: bold;
+  
+}
+
+.cadastroELogin p {
+  font-size: 20px;
+}
+
+#nome, #cpf, #senha, #email {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 85%;
+  height: 40px;
+  font-size: 15px;
+  color: black;
+  margin-bottom: 25px;
+
+}
+
+.botao {
+  display: inline-block;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 13px 30px;
+  margin-left: 30%; 
+  border: white;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: black;
+  
+}
+
+label {
+  padding-bottom: 10px;
+
+}
+
+.retornoInicial ,a{
+  text-align: right;
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  margin-top: 45px;
+}
+
+/* tela inicial */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#infoBank ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  margin-left: 50px;
+}
+
+#home {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  background: black;
+  color: white;
+}
+
+#infoBank {
+  flex: 0 0 auto;
+  width: 50%;
+
+}
+
+#infoBank, a{
+  margin-right: 55px;
+ 
+
+}
+
+#infoLoginCadastro {
+  display: flex;
+  width: 20%;
+  
+
+  
+}
+
+#infoLoginCadastro >a {
+  margin: 0;
+  margin-left: 10px;
+}
+
+#infoLoginCadastro form {
+  margin-left: 1px;
+}
+
+i {
+  color: black;
+}
+
+#logo {
+  flex: 0 0 auto;
+  width: 20%;
+  margin-left: 50px;
+}
+
+#logo img {
+  width: 165px;
+}
+
+#usuario {
+  width: 18px;
+  height: 19px;
+  margin-right: 5px;
+}
+
+#login {
+  margin: 0;
+  margin-left: 3px;
+  margin-right: 32px;
+
+  
+}
+#botaoCadastro {
+  width: 116px;
+  height: 24px;
+  font-size: 15px;
+  border-radius: 30px;
+  padding: 0px 6px;
+  margin-left: 0;
+
+}
+
+#infoInvestimentos {
+  background-color: black;
+  text-align: left;
+  position: relative;
+  margin-left: 50px;
+  margin-top: 50px;
+  
+
+
+}
+
+#infoInvestimentos >h1 {
+  font-weight: 700;
+  font-size: 48px;
+  width: 792px;
+  height: 120px;
+  margin-bottom: 20px;
+  margin-top: 125px;
+}
+
+#infoInvestimentos >p {
+  font-weight: 300;
+  font-size: 30px;
+  width: 767px;
+  height: 72px;
+  
+}
+
+#infoMulher {
+  display: flex;
+  width: 100%;
+  background: black;
+}
+
+.banner {
+  width: 50%;
+}
+
+#mulher {
+  width: 520px;
+  height: 665px;
+  margin-left: 90px;
+}
+
+#conteudo {
+  background-image: url(../imagens/arco2.jpeg); 
+  background-size: cover;
+
+}
+
+#intro {
+  position: relative;
+  text-align: center;
+  padding-bottom: 80px;
+  color: black;
+  
+}
+
+#apresentacao {
+  font-weight: 700;
+  font-size: 60px;
+  padding-bottom: 40px;
+  padding-top: 70px;
+  
+}
+
+#infoDigital {
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#infoSaque {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+#vantagemCartao {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  height: 400px;
+  color: black;
+  background-color: white;
+  margin: 0 100px 0 120px;
+
+}
+
+
+#cartao, #dinheiro, #atendimento {
+  flex: 0 0 auto;
+  width: 400px;
+  height: 250px;
+  text-align: center;
+  margin-top: 80px;
+
+}
+
+.titulos {
+  font-size: 23px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.infoBeneficio {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+
+}
+
+#cartao >img {
+  width: 64.17px;
+  height: 46.67px;
+  margin-bottom: 20px;
+}
+
+#dinheiro >img {
+  margin-top: 10px;
+  width: 70px;
+}
+
+#atendimento >img {
+  width: 92px;
+  height: 60px;
+  margin-top: 10px;
+  
+}
+
+#dinheiro {
+  margin-top: 66px;
+}
+
+.solicitacao {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#soliciteCartao {
+  width: 50%;
+  position: relative;
+  margin-bottom: 80px;
+  margin-right: 50px;
+  color: black;
+   
+}
+
+#cartaoDestaque {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-left: 40px;
+}
+
+#cartaoVirtual {
+  width: 50%;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  
+}
+
+#destaqueSolicitacao, #marcaRodape {
+  font-weight: 700;
+  font-size: 50px;
+  
+}
+
+#infoDestaque {
+  font-weight: 500;
+  font-size: 22px;
+  margin-top: 20px
+}
+
+#numCartao {
+  font-weight: 500;
+  font-size: 40px;
+
+}
+
+#informCartao #nomeTitular {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#cartaoVirtual {
+  position: relative;
+  width: 420px;
+  height: 270px;
+  border: 1px solid #adadad;
+  overflow: hidden;
+  /* background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%); */
+  /* box-shadow: inset -5px -5px 250px rgb(255 255 255 / 2%); */
+  border-radius: 32px;
+  /* background-color: white; */
+  margin-left: 16px;
+}
+
+#cartaoBlur {
+  filter: blur(2px);
+  position: absolute;
+  background-color: rgba(0,0,0, 0.1);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#informCartao {
+  position: absolute;
+  color: black;
+  z-index: 2;
+}
+
+#nomeTitular, #numCartao, #marcaRodape {
+  margin-left: 30px;
+  padding-top: 40px;
+}
+
+#marcaRodape {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#master {
+  width: 100px;
+  margin-left: 30px;
+  position: absolute;
+  transform: translate(0, -50px);
+ 
+}
+
+#rodape {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+
+}
+
+#redeSocial {
+  width: 40%;
+  position: relative;
+  
+  
+}
+
+.infoRodape {
+  width: 20%;
+
+}
+
+.infoRodape ul{
+  list-style-type: none;
+}
+
+.infoRodape li {
+  margin-bottom: 5px;
+}
+#destaqueSolicitacao {
+  color: black;
+}
+
+.redes {
+  margin-left: 20px;
+}
+
+#marcaBanco {
+  margin-bottom: 20px;
+}
+
+#marcaRedes {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  
+  
+}
+
+#marcaRedes ul {
+  list-style-type: none;
+  display: flex;
+  
+  
+}
+
+.infoRodape p {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.infoRodape a {
+
+  color: black;
+  
+
+}
+
+#contato {
+  margin-top: 15px;
+}
+
+/* dashboard */
+
+#bodydash{
+  background:black;
+
+
+}
+
+#imgPerfil {
+  width: 60px;
+  height: 62px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#menu {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  cursor: pointer;
+  
+  
+}
+
+#dashlogo {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  color: black;
+}
+
+#perfil {
+  width: 100%;
+  text-align: right;
+  margin-top: 5px;
+  
+}
+  
+
+#perfil >p {
+  margin: 0;
+  display: inline-block;
+  margin-bottom: 40px;
+  vertical-align: middle;
+  margin-right: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+
+#saudacao {
+  margin: 40px;
+  margin-bottom: 70px;
+}
+
+#saudacao >p {
+  font-weight: 500;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Pagamentos realizados e Faturas */
+ 
+#pgtos {
+  background: white;
+  width: 100%;
+  border-radius: 15px;
+  margin-left: 30px;
+}
+
+#pgtos >p {
+  font-weight: 500;
+  font-size: 25px;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  cursor: pointer;
+  
+}
+
+
+#pagamentosFaturas {
+  display: flex;
+  flex-wrap: wrap ;
+  width: 33.33%;
+}
+
+.pagamentosDiario {
+  display: flex;
+  flex-wrap: wrap ;
+  background: black;
+  color: white;
+  border-radius: 15px;
+  margin: 20px;
+
+}
+
+.data {
+  font-weight: 400;
+  font-size: 10px;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.beneficiario {
+  font-weight: 500;
+  font-size: 13px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.valor {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: right;
+  margin-top: 30px;
+}
+
+.valores {
+  width: 40%; 
+}
+
+.transferencia {
+  width: 54%;
+}
+
+#fatura {
+  position: relative;
+  background: white;
+  color: black;
+  font-weight: 500;
+  border-radius: 15px;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: 36px;
+
+}
+
+#faturas {
+  font-size: 25px;
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+#mes {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+#cobranca {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+#vencimento {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+#visualizar {
+  font-weight: 800;
+  font-size: 16px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+#mes, #cobranca, #vencimento, #visualizar {
+  text-align: center;
+}
+
+/* Saldo e investimentos */
+
+#saldoInvestimento {
+  width: 33.33%;
+  display: flex;
+  flex-wrap: wrap ;
+  margin-left: 30px;
+}
+
+#saldo {
+  position: relative;
+  font-weight: 500;
+  font-size: 25px;
+  background: white;
+  color: black;
+  border-radius: 15px;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+#saldoConta {
+  display: inline-block;
+  font-size: 40px;
+  margin-left: 30px;
+  padding-bottom: 40px;
+  
+}
+
+#saldo >p {
+  
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+#saldo img {
+  display: inline-block;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+
+#extrato {
+  background: #252525;
+  color: white;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  
+  
+  
+}
+
+#verExtrato {
+  width: 90%;
+  display: inline-block;
+  margin-top: 25px;
+
+}
+
+#verExtrato >p {
+  margin-left: 30px; 
+  cursor: pointer;
+}
+
+#acaoVoltar {
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#meuInvestimentos {
+  position: relative;
+  background: white;
+  color: black;
+  border-radius: 15px;
+  width: 100%;
+  margin-top: 30px;
+  padding-right: 60px;
+
+  
+}
+
+#meuInvestimentos >p {
+  font-weight: 500;
+  font-size: 25px;
+  padding-left: 30px;
+  padding-top: 20px;
+  cursor: pointer;
+  
+}
+
+#estatistica {
+  width: 300px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+#detalhe {
+  width: 30px;
+  position: absolute;
+  margin-left: 40px;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+/* Cartao */
+
+#itemCartao {
+  position: relative;
+  color: black;
+  text-align: left;
+  border: 2px;
+  background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -5px -5px 250px rgb(255 255 255 / 2%);
+  border-radius: 32px;
+  background-image: url(../imagens/arco2.jpeg);
+  background-size: cover;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 100%;
+}
+
+#itemCartao, #marcaRodape {
+  font-size: 30px;
+}
+
+#itemCartao, #numCartao {
+  font-size: 28px;
+}
+
+#itemCartao, #nomeTitular {
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+
+#nomeTitular img {
+  width: 70px;
+  margin-left: 20px;
+  margin-top: 20px;
+  position: absolute;
+  display: inline-block;
+}
+
+#meuCartao {
+  margin-left: 30px;
+  background: #9b9a9a;
+  width: 33.33%;
+  border-radius: 15px;
+  position: relative;
+  margin-right: 20px;
+  cursor: pointer;
+
+}
+ 
+#itemCartao {
+  width: calc(100% - 60px);
+}
+
+#meuCartao >p  {
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+#segundoCartao {
+background-color: rgb(0, 0, 0);
+color: white;
+margin-top: 30px;
+border-radius: 20px;
+width: calc(100% - 60px);
+margin-left: 30px;
+margin-bottom: 40px;
+margin-right: 30px;
+cursor: pointer;
+}
+
+
+#abaixo {
+  position: relative;
+  padding-left: 45%;
+  
+}
